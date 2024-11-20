@@ -4,7 +4,6 @@
 + O projeto se iniciou enquanto estava no meio de meus estudos de html/css e de java script, sendo assim pode e provavelmente vai ter muitos erros de código, mas estou aos poucos melhorando
 
 ## Funções já adicionadas
----
 
 Atualmente enquanto escrevo já foram adicionadas as seguintes funções:
 
