@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacuadora de função do primeiro grau</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdn.plot.ly/plotly-2.24.2.min.js"></script>
+</head>
+<body>
+    <div id="overlay" class="overlay"></div>
+    <header>
+        <div class="cabecalho">
+            <img src="menuitem.png" alt="imagem menu" id="menuitem">
+            <h1>Cacuadora</h1>
+            <img src="logo.png" alt="logo site">
+        </div>
+
+        <div id="menu-escondido" class="menu-escondido">
+            <ul id="lista-menu">
+                <li id="classes">Menu</li>
+                <li class="item-lista"><a href="index.html" class="menulink">Home</a></li>
+                <li class="item-lista"><a href="#" class="menulink ativo">Função do 1º grau</a></li>
+                <li class="item-lista"><a href="2grau.html" class="menulink">Função do 2º grau</a></li>
+                <li class="item-lista"><a href="#" class="menulink">Suspense</a></li>
+                <li class="item-lista"><a href="#" class="menulink">Clássicos da Literatura</a></li>
+            </ul>
+
+            <div class="logo-center">
+                <img src="logo.png" alt="" id="logomenu">
+                <p class="text-menu">Número de Contato:</p>
+                <p class="text-menu"><abbr title="Número meramente ilustrativo">4002-8922</abbr></p>
+                <p class="text-menu">Github: <a href="https://github.com/NathanEABev" rel="external" target="_blank">NathanEABev</a></p>
+                <p class="text-menu">&copy; Nathan E. A. Bevilaqua</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="sei-la">
+            <h2>Cacuadora de função do primeiro grau</h2>
+            <p>Forneça abaixo os coeficientes da função</p>
+            <div id="container" class="umgrau">
+                <div class="dados">
+                    <label for="dado-a">Coeficiente A:</label><br>
+                    <input type="number" name="dado-a" id="dado-a">
+                </div>
+                <div class="dados">
+                    <label for="dado-b">Coeficiente B:</label><br>
+                    <input type="number" name="dado-b" id="dado-b">
+                </div>
+            </div>
+        
+            <div class="check">
+                <label for="pContas">Mostrar passos?</label>
+                <input type="checkbox" name="pContas" id="pContas">
+            </div>
+            <button id="iniciar">Iniciar</button>
+        </div>
+
+        <p id="resposta"></p>
+
+        <div id="graph"></div>
+        <small id="graphInfo">Gráfico interativo: passe o mouse para identificar pontos e usar funções.</small>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script1grau.js"></script>
+</body>
+</html>

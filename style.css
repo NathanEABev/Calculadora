@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-fundo: #F2F2F2;
+    --cor-botao: #DC143C;
+    --cor-destaque: #A11230;
+    --cor-destaque2: #414242;
+    --cor-input: #ECEFF1;
+
+    --font-p: "Roboto", sans-serif;
+    --font-s: "Poppins", sans-serif;
+}
+
+body {
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font-s);
+    background-color: #cecececc;
+}
+
+main {
+    max-width: 1200px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 120px;
+    min-height: 75vh;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 10px 10px 15px black;
+    padding-bottom: 2em;
+}
+
+.cabecalho {
+    background-color: var(--cor-botao);
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-p);
+}
+
+header h1 {
+    margin: auto 0;
+}
+
+header img {
+    width: 75px;
+}
+
+.hidden {
+    transform: translateY(-120%);
+    z-index: -1;
+}
+
+#menu-escondido {
+    position: fixed;
+    left: -320px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--cor-botao);
+    color: white;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu-escondido ul {
+    text-align: left;
+}
+
+.text-menu a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.text-menu a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.text-menu a:hover {
+    text-decoration: underline;
+}
+
+#menu-escondido.show {
+    left: 0;
+}
+
+#classes {
+    font-size: 40px;
+    margin: .5em 15px 1em;
+}
+
+.item-lista {
+    padding: .1em;
+    color: var(--complementar);
+    font-size: 25px;
+    margin: .2em 0;
+}
+
+.menulink {
+    text-decoration: none;
+    color: var(--complementar);
+    font-size: 25px;
+    display: block;
+}
+
+.menulink.ativo {
+    text-decoration: underline;
+    color: var(--cor-destaque2);
+    font-size: 25px;
+    background-color: var(--cor-destaque);
+}
+
+.menulink.ativo:hover {
+    text-decoration: underline;
+    color: var(--cor-destaque2);
+    font-size: 30px;
+    background-color: var(--cor-destaque);
+}
+
+.menulink:hover {
+    text-decoration: none;
+    color: var(--cor-destaque2);
+    font-size: 30px;
+    background-color: var(--cor-destaque);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 500;
+}
+
+.overlay.show {
+    display: block;
+}
+
+#sei-la {
+    background-color: var(--cor-fundo);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 40px;
+    font-family: var(--font-p);
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto 3em;
+    max-width: 700px;
+}
+
+#container.umgrau {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2em auto 3em;
+    max-width: 700px;
+}
+
+input {
+    border-radius: 15px;
+    padding: .5em;
+    text-align: center;
+}
+
+#pContas {
+    margin-bottom: 2em;
+}
+
+button {
+    padding: .3em;
+    border-radius: 50px;
+    background-color: #dc143c;
+    margin-bottom: 1em;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#grafico {
+    margin-top: 2em;
+}
+
+.caixa {
+    display: flex;
+      width: 100%;
+      gap: 10px;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+span {
+    vertical-align: middle;
+}
+
+article {
+    flex: 1;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+
+article p {
+    margin-top: 1em;
+}
+
+#graph {
+    width: 600px;
+    margin: 1em auto;
+    display: none;
+}
+
+#graphInfo {
+    font-size: 10px;
+    display: none;
+}
