@@ -177,10 +177,29 @@ h1 {
     max-width: 700px;
 }
 
+#container.exp {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin: 2em auto 3em;
+    max-width: 700px;
+}
+
 input {
     border-radius: 15px;
     padding: .5em;
     text-align: center;
+}
+
+#container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label small {
+    font-size: 10px;
+    margin-top: 2px;
+    display: block;
+    margin-bottom: 2em;
 }
 
 #pContas {

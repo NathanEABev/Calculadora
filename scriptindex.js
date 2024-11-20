@@ -13,20 +13,3 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('show');
     document.body.style.backgroundColor = 'white';
 });
-
-let lastScrollTop = 0; // Mantém o último valor do scroll
-
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-        // Scroll para baixo: esconde o header
-        header.classList.add('hidden');
-    } else {
-        // Scroll para cima: mostra o header
-        header.classList.remove('hidden');
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
-});
