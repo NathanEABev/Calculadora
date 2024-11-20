@@ -9,7 +9,7 @@ Atualmente enquanto escrevo já foram adicionadas as seguintes funções:
 
   + **função afim**
   + **função quadrática**
-  + **função exponencial**
+  + **função exponencial** (incompleto até o momento que estou escrevendo)
 
 ---
 
