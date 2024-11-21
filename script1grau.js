@@ -82,7 +82,7 @@ function mGraph() {
     const pontoX = -varB / varA;
 
     // Gerar os pontos do gráfico (valores de x e y)
-    const x = Array.from({ length: 101 }, (_, i) => i - 50); // Gera valores de x entre -50 e 50
+    const x = Array.from({ length: 41 }, (_, i) => i - 20); // Gera valores de x entre -50 e 50
     const y = x.map(xi => varA * xi + varB); // Equação da reta: y = ax + b
 
     // Dados para o gráfico
