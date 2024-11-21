@@ -18,7 +18,7 @@ overlay.addEventListener('click', () => {
 const parA = document.getElementById('dado-a')
 const parB = document.getElementById('dado-b')
 const parC = document.getElementById('dado-c')
-const pard = document.getElementById('dado-d')
+const parD = document.getElementById('dado-d')
 
 const botao = document.getElementById('iniciar')
 botao.addEventListener('click', () => {
@@ -34,9 +34,11 @@ function conta() {
     let varA = parseFloat(parA.value) || 0
     let varB = parseFloat(parB.value) || 0
     let varC = parseFloat(parC.value) || 0
-    let vard = parseFloat(pard.value) || 0
+    let varD = parseFloat(pard.value) || 0
 
-    if(varA === 0 || varB === 0) {
+    if(varA === 0 && varB === 0 && varC === 0 && varD === 0) { 
+        resp.innerHTML = "Preencha os campos acima"
+    } else if(varA === 0 || varB === 0) {
         resp.innerHTML = `Isso não é uma função exponencial`
     }
 
