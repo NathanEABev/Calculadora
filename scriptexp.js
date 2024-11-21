@@ -34,17 +34,33 @@ function conta() {
     let varA = parseFloat(parA.value) || 0
     let varB = parseFloat(parB.value) || 0
     let varC = parseFloat(parC.value) || 0
-    let varD = parseFloat(pard.value) || 0
+    let varD = parseFloat(parD.value) || 0
+
+    const pontoY = varA ** (0 - varC) * varB + varD
 
     if(varA === 0 && varB === 0 && varC === 0 && varD === 0) { 
         resp.innerHTML = "Preencha os campos acima"
-    } else if(varA === 0 || varB === 0) {
-        resp.innerHTML = `Isso não é uma função exponencial`
+        return
+    } else if(varA === 0) {
+        resp.innerHTML = `Não é uma função exponencial`
+        return
     }
 
     if(mContas.checked) {
-
+        resp.innerHTML = `Marcou pq?`
     } else { 
-        
+        if(varC === 0 && varD === 0) {
+            resp.innerHTML = `A equação da função é <strong>y = ${varA}<sup>x</sup> &times; ${varB}</strong> <br>
+            O ponto de corte com o eixo y (x = 0) é: <strong>${pontoY}</strong>`
+        } else if(varC === 0) {
+            resp.innerHTML = `A equação da função é <strong>y = ${varA}<sup>x</sup> &times; ${varB} + ${varD}</strong> <br>
+            O ponto de corte com o eixo y (x = 0) é: <strong>${pontoY}</strong>`
+        } else if(varD === 0) {
+            resp.innerHTML = `A equação da função é <strong>y = ${varA}<sup>x - ${varC}</sup> &times; ${varB}</strong> <br>
+            O ponto de corte com o eixo y (x = 0) é: <strong>${pontoY}</strong>`
+        } else {
+            resp.innerHTML = `A equação da função é <strong>y = ${varA}<sup>x - ${varC}</sup> &times; ${varB} + ${varD}</strong> <br>
+            O ponto de corte com o eixo y (x = 0) é: <strong>${pontoY}</strong>`
+        }
     }
 }
