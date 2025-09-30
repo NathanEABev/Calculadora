@@ -1,6 +1,6 @@
 # Cacuadora
 
-+ Sim o nome está escrito errado, foi uma brincadeira dos meus colegas devido minha dicção ruim, que posteriormente acabei definindo como o título do site
++ Sim o nome está escrito errado, foi um erro de digitação, mas que posteriormente acabei definindo como o título do site
 + O projeto se iniciou enquanto estava no meio de meus estudos de html/css e de java script, sendo assim pode e provavelmente vai ter muitos erros de código, mas estou aos poucos melhorando
 
 ## Funções já adicionadas
